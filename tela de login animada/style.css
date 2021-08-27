@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+.sm-container{
+    text-align: center;
+  }
+  
+.sm-container i{
+    color: #f5f6fa;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+.sm-container i:hover{
+    transform: scale(1.2);
+  }
+
+.sm-menu{
+    background: #487eb0;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+  }
+  
+.sm-menu::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #487eb0;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+.box h1 {
+   color: white;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.box input[type = "text"], .box input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:  2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;   
+}
+
+.box input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:  2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0);
+    } 
+    40%{
+        transform: translateY(-13px);
+    }
+    70%{
+        transform: translateY(-7px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
+
+.box input[type = "submit"]:hover {
+   background: #2ecc71;
+   animation: bounce 1s linear;
+}
+

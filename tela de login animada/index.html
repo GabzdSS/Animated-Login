@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>LOGIN ANIMADO</title>
+</head>
+<body>
+    <div class="middle">
+        <div class="sm-container">
+           <i class="show-btn fa-solid fa-keyboard"></i>
+           <div class="sm-menu">
+               <form class= "box" action="index.html" method="POST">
+                  <h1>Login</h1>
+                  <input type="text" name="" placeholder="Username">
+                  <input type="password" name="" placeholder="Password">
+                  <input type="submit" name="" value="Login">
+               </form>
+            </div>
+        </div>
+      </div>
+    
+      <script>
+        $(".show-btn").click(function(){
+          $(".sm-menu").fadeToggle("fast");
+        });
+      </script>
+</body>
+</html>
